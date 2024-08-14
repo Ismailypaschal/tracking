@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tracking Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <div class="header_structure">
+          <!-- Mobile navbar -->
+          <div class="mobile_navbar" id="mobile_navbar">
+            <ul class="listitemsmob">
+              <li><a href="#">product</a></li>
+              <li><a href="#">features</a></li>
+              <li><a href="#">pricing</a></li>
+              <li class="hr_list"></li>
+              <li><a id="add" href="#">Login</a></li>
+            </ul>
+          </div>
+          <!-- Desktop navbar-->
+          <div class="desktop_navbar">
+            <div class="head_div1">
+              <img src="images/logo.svg" />
+            </div>
+            <div class="head_div2">
+              <div class="listitemsdesk_container" id="hideOnMobile">
+                <ul class="listitemsdesk">
+                  <li><a href="#">product</a></li>
+                  <li><a href="#">features</a></li>
+                  <li><a href="#">pricing</a></li>
+                  <li>
+                    <a>
+                      <i
+                        class="fa-solid fa-circle fa-2xs"
+                        style="color: #b1b1b8"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_button">
+                <button class="hideOnMobile">Login</button>
+                <button
+                  onclick="showNavBar()"
+                  class="hideOnDesktop"
+                  id="hamburger"
+                >
+                  <img src="images/icon-hamburger.svg" />
+                </button>
+                <button
+                  onclick="showNavBar()"
+                  class="hideOnDesktop hide"
+                  id="x"
+                >
+                  <img src="images/icon-close.svg" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="content_div">
+            <div>
+              <h4><span>New</span> Monograph Dashboard</h4>
+              <h2>Powerful insights into your team</h2>
+              <p>project planning and time tracking for agile teams</p>
+              <div>
+                <button>Schedule a demo</button>
+                <button>To see a preview</button>
+              </div>
+            </div>
+            <div><img src="images/illustration-devices.svg" /></div>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="content_div">
+        <div class="textcontent_div">
+          <h4 class="h4_style">
+            <span class="span_style">New</span> Monograph Dashboard
+          </h4>
+          <h2 class="h2_style">Powerful insights into your team</h2>
+          <p class="p_style">
+            project planning and time tracking for agile teams
+          </p>
+          <div class="button_container">
+            <button>Schedule a demo</button>
+            <button>To see a preview</button>
+          </div>
+        </div>
+        <div class="device_img_container">
+          <img class="device_img" src="images/illustration-devices.svg" />
+        </div>
+      </div>
+    </section>
+    <div class="shadow"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
